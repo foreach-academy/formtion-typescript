@@ -1,17 +1,17 @@
 // ajouter les types
 
-let helloWorld = "Hello World";
+let helloWorld: string = "Hello World";
 
-function upperCase(value) {
+function upperCase(value: string): string {
   return value.toUpperCase();
 }
 
 console.log(upperCase(helloWorld));
 
-let prices = [1, 45, 67, 33.9];
+let prices: number[] = [1, 45, 67, 33.9];
 
-function reduce(values) {
-  return values.reduce((a, b) => a + b);
+function reduce(values: number[]): number {
+  return values.reduce((a: number, b: number): number => a + b);
 }
 
 console.log(reduce(prices));
@@ -22,16 +22,16 @@ enum Role {
 }
 
 type Utilisateur = {
-  nom;
-  role;
+  nom: string;
+  role: Role;
 };
 
-let u = {
+let u: Utilisateur = {
   nom: "Fabrice",
   role: Role.Admin,
 };
 
-function isAdmin(user) {
+function isAdmin(user: Utilisateur): boolean {
   if (user.role == Role.Admin) {
     return true;
   }
