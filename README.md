@@ -42,6 +42,12 @@ tsc.cmd index.ts
 
 **const** => declarer une constante (on ne va pas pouvoir modifier la valeur)
 
+## les diffferents types en Typescript
+
+[Voir le code](type.ts)
+
+### Exos types
+
 ## TODO
 
 [] collection
