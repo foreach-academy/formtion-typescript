@@ -18,23 +18,22 @@ console.log(reduce(prices));
 
 enum Role {
   Utilisateur,
-  Admin
+  Admin,
 }
 
-type Utilisateur {
-  nom,
-  role,
-}
+type Utilisateur = {
+  nom;
+  role;
+};
 
 let u = {
-  nom: 'Fabrice',
-  role: Role.Admin
-} 
+  nom: "Fabrice",
+  role: Role.Admin,
+};
 
 function isAdmin(user) {
-  if (user.role == Role.Admin){
-    return true
+  if (user.role == Role.Admin) {
+    return true;
   }
-  return false
+  return false;
 }
-
