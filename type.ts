@@ -41,9 +41,9 @@ enum Direction {
 let direction: Direction = Direction.Haut;
 
 enum Role {
-  Admin,
-  Utilisateur,
-  Visteur,
+  Admin = "ADMIN",
+  Utilisateur = "UTILISATEUR",
+  Visteur = "VISITEUR",
 }
 
 // un type personalise
