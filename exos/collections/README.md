@@ -42,7 +42,7 @@ let tableau = ["un", "deux", "scrabbler", "carte", "fabrice", "les collections c
 
 ```JS
 // Tier et afficher le tableau selon le role de chacun
-// ADMIN puis UTILISATEUR puis VISITEUR
+// ADMIN puis VISITEUR puis UTILISATEUR
 // puis le faire dans l'ordre inverse
 
 let utilisateurs = [
